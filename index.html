@@ -275,7 +275,7 @@ section.block{padding:44px 0}
       </div>
       <div class="ev alt">
         <span class="d" data-es="Jueves y domingos · 7:00 PM" data-en="Thursdays &amp; Sundays · 7:00 PM">Jueves y domingos · 7:00 PM</span>
-        <h3>Karaoke <span class="it" style="color:var(--gold)">con DJ Lual</span></h3>
+        <h3 data-es='Karaoke <span class="it" style="color:var(--gold)">con DJ Lual</span>' data-en='Karaoke <span class="it" style="color:var(--gold)">with DJ Lual</span>'>Karaoke <span class="it" style="color:var(--gold)">con DJ Lual</span></h3>
         <p data-es="La semana no termina el fin de semana. Karaoke en vivo para acompañar tu cena, tus tragos y la mejor compañía de North Tampa." data-en="The week doesn't end on the weekend. Live karaoke to go with your dinner, your drinks and the best company in North Tampa.">La semana no termina el fin de semana. Karaoke en vivo para acompañar tu cena, tus tragos y la mejor compañía de North Tampa.</p>
         <div class="big" data-es="JUE &amp; DOM · 7PM" data-en="THU &amp; SUN · 7PM">JUE &amp; DOM · 7PM</div>
       </div>
@@ -384,6 +384,7 @@ function setLang(l){
   document.getElementById('btn-es').classList.toggle('on', l==='es');
   document.getElementById('btn-en').classList.toggle('on', l==='en');
   renderMenu(curCat);
+  renderTabs();
   document.getElementById('ticker').textContent = tickerText(l);
   try{localStorage.setItem('lvn-lang', l);}catch(e){}
 }
