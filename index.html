@@ -155,6 +155,15 @@ nav{position:static}
 .links{display:none}
 section.block{padding:44px 0}
 }
+
+/* faq */
+.faqs{max-width:760px;margin:0 auto;display:grid;gap:10px}
+.faqs details{background:#141414;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.faqs summary{cursor:pointer;padding:16px 20px;font-weight:700;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faqs summary::-webkit-details-marker{display:none}
+.faqs summary::after{content:"+";color:var(--gold);font-size:22px;font-weight:400;flex:0 0 auto}
+.faqs details[open] summary::after{content:"–"}
+.faqs details p{padding:0 20px 18px;color:var(--mut);font-size:14.5px}
 </style>
 </head>
 <body>
@@ -323,6 +332,22 @@ section.block{padding:44px 0}
 </section>
 
 <!-- visitanos -->
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kick" data-es="Dudas" data-en="Questions">Dudas</span>
+      <h2 data-es='Preguntas <span class="it">frecuentes</span>' data-en='<span class="it">FAQ</span>'>Preguntas <span class="it">frecuentes</span></h2>
+    </div>
+    <div class="faqs">
+      <details><summary data-es="¿Necesito reservar mesa?" data-en="Do I need a reservation?">¿Necesito reservar mesa?</summary><p data-es="No — entra cuando quieras. Pero si vienes en grupo o hay un partido grande, reserva y te guardamos tu lugar." data-en="No — walk right in. But if you're coming with a group or there's a big game on, reserve ahead and we'll hold your table.">No — entra cuando quieras. Pero si vienes en grupo o hay un partido grande, reserva y te guardamos tu lugar.</p></details>
+      <details><summary data-es="¿Cuál es el horario?" data-en="What are your hours?">¿Cuál es el horario?</summary><p data-es="Mar–Jue 11am–11pm · Vie–Sáb 11am–12am · Dom 11am–11pm · Lun cerrado." data-en="Tue–Thu 11am–11pm · Fri–Sat 11am–12am · Sun 11am–11pm · Mon closed.">Mar–Jue 11am–11pm · Vie–Sáb 11am–12am · Dom 11am–11pm · Lun cerrado.</p></details>
+      <details><summary data-es="¿Cuándo es el karaoke?" data-en="When is karaoke night?">¿Cuándo es el karaoke?</summary><p data-es="Jueves y domingos desde las 7pm con DJ Lual." data-en="Thursdays and Sundays from 7pm with DJ Lual.">Jueves y domingos desde las 7pm con DJ Lual.</p></details>
+      <details><summary data-es="¿Pasan todos los partidos?" data-en="Do you show every game?">¿Pasan todos los partidos?</summary><p data-es="NFL, NBA, MLB — si se está jugando, está en pantalla." data-en="NFL, NBA, MLB — if it's playing, it's on screen.">NFL, NBA, MLB — si se está jugando, está en pantalla.</p></details>
+      <details><summary data-es="¿Tienen menú para niños?" data-en="Do you have a kids menu?">¿Tienen menú para niños?</summary><p data-es="Sí, y combo familiar desde $14.99." data-en="Yes, plus a family combo from $14.99.">Sí, y combo familiar desde $14.99.</p></details>
+      <details><summary data-es="¿Dónde están ubicados?" data-en="Where are you located?">¿Dónde están ubicados?</summary><p data-es="8502 N Armenia Ave, Suite 1H, North Tampa, FL 33604 — sin valet, sin código de vestir." data-en="8502 N Armenia Ave, Suite 1H, North Tampa, FL 33604 — no valet, no dress code.">8502 N Armenia Ave, Suite 1H, North Tampa, FL 33604 — sin valet, sin código de vestir.</p></details>
+    </div>
+  </div>
+</section>
 <section class="block" id="visitanos" style="background:var(--coal);border-top:1px solid var(--line)">
   <div class="wrap">
     <div class="sec-head">
