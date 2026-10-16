@@ -28,7 +28,8 @@ a{color:inherit}
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(14,11,8,.96);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;gap:14px}
-.brand{text-decoration:none;line-height:1}
+.brand{text-decoration:none;line-height:1;display:flex;align-items:center;gap:12px}
+.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--gold)}
 .brand b{font-family:'Oswald',Arial,sans-serif;font-size:21px;letter-spacing:2px;color:var(--cream)}
 .brand b em{font-style:normal;color:var(--gold)}
 .brand small{display:block;font-size:9.5px;letter-spacing:4px;color:var(--mut);margin-top:3px}
@@ -168,7 +169,7 @@ section.block{padding:44px 0}
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#"><b>LA VITA <em>NUOVA</em></b><small>SPORT BAR &amp; GRILL</small></a>
+    <a class="brand" href="#"><img src="imgs/logo.png" alt="La Vita Nuova — logo"><span><b>LA VITA <em>NUOVA</em></b><small>SPORT BAR &amp; GRILL</small></span></a>
     <div class="links">
       <a href="#titulares" data-es="Los titulares" data-en="Starters">Los titulares</a>
       <a href="#menu" data-es="El menú" data-en="Menu">El menú</a>
@@ -353,7 +354,7 @@ section.block{padding:44px 0}
 <footer>
   <div class="wrap">
     <div>
-      <a class="brand" href="#" style="margin-bottom:12px;display:inline-block"><b>LA VITA <em>NUOVA</em></b><small>SPORT BAR &amp; GRILL</small></a>
+      <a class="brand" href="#" style="margin-bottom:12px;display:inline-flex"><img src="imgs/logo.png" alt="La Vita Nuova — logo"><span><b>LA VITA <em>NUOVA</em></b><small>SPORT BAR &amp; GRILL</small></span></a>
       <p data-es="Comida latina hecha a mano y todos los partidos en pantalla, en el corazón de North Tampa." data-en="Handcrafted Latin food and every game on screen, in the heart of North Tampa.">Comida latina hecha a mano y todos los partidos en pantalla, en el corazón de North Tampa.</p>
     </div>
     <div>
