@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Vita Nuova — Sport Bar &amp; Grill · Tampa, FL</title>
+<meta name="description" content="La Vita Nuova Sport Bar & Grill en North Tampa: comida latina hecha a mano, todos los partidos en pantalla. 8502 N Armenia Ave, Tampa FL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0e0b08;--coal:#171210;--coal2:#1f1813;--gold:#e8a13a;--amber:#c97b1e;--red:#a81e24;--cream:#f3e9d7;--mut:#b8a88f;--line:#2c231b}
+body{background:var(--black);color:var(--cream);font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;line-height:1.6}
+h1,h2,h3,.osw{font-family:'Oswald','Arial Narrow',Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:1.12}
+.it{font-family:'Playfair Display',Georgia,serif;font-style:italic;text-transform:none;letter-spacing:0}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+/* scoreboard topbar */
+.topbar{background:#000;border-bottom:2px solid var(--gold);font-size:12.5px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.live{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:1px}
+.dot{width:9px;height:9px;border-radius:50%;background:#3ddc74;display:inline-block;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.35}}
+.topbar a.tel{color:var(--gold);font-weight:800;text-decoration:none}
+.lang{display:flex;gap:6px}
+.lang button{background:transparent;border:1px solid var(--gold);color:var(--gold);font-weight:700;border-radius:4px;padding:3px 12px;font-size:12px;cursor:pointer;letter-spacing:1px}
+.lang button.on{background:var(--gold);color:#000}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(14,11,8,.96);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;gap:14px}
+.brand{text-decoration:none;line-height:1}
+.brand b{font-family:'Oswald',Arial,sans-serif;font-size:21px;letter-spacing:2px;color:var(--cream)}
+.brand b em{font-style:normal;color:var(--gold)}
+.brand small{display:block;font-size:9.5px;letter-spacing:4px;color:var(--mut);margin-top:3px}
+.links{display:flex;gap:22px}
+.links a{text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut)}
+.links a:hover{color:var(--gold)}
+.cta{background:var(--red);color:#fff!important;text-decoration:none;font-weight:700;font-size:13.5px;letter-spacing:1px;padding:11px 22px;border-radius:6px;text-transform:uppercase;white-space:nowrap}
+.cta:hover{background:#c2262e}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,7,5,.55) 0%,rgba(10,7,5,.25) 40%,rgba(10,7,5,.92) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:56px;width:100%}
+.kicker{display:inline-block;border:1px solid var(--gold);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:3px;padding:7px 16px;border-radius:3px;margin-bottom:18px;text-transform:uppercase}
+.hero h1{font-size:clamp(44px,7.5vw,96px);color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+.hero h1 .gold{color:var(--gold)}
+.hero p.lead{font-size:clamp(16px,2vw,20px);color:var(--cream);max-width:620px;margin:16px 0 28px}
+.hero p.lead .it{color:var(--gold);font-size:1.1em}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 32px;border-radius:6px;font-weight:800;text-decoration:none;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-family:'Oswald',Arial,sans-serif}
+.btn.gold{background:var(--gold);color:#140f08}
+.btn.ghost{border:2px solid var(--cream);color:var(--cream)}
+.hero-meta{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;font-size:13.5px;color:var(--mut)}
+.hero-meta b{color:var(--gold)}
+/* ticker */
+.ticker{background:var(--gold);color:#140f08;overflow:hidden;white-space:nowrap;border-top:3px solid #000;border-bottom:3px solid #000}
+.ticker .run{display:inline-block;padding:12px 0;font-family:'Oswald',Arial,sans-serif;font-weight:700;letter-spacing:2px;font-size:15px;animation:tick 28s linear infinite}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* sections */
+section.block{padding:72px 0}
+.sec-head{margin-bottom:38px}
+.sec-head .kick{color:var(--gold);font-size:12.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.sec-head h2{font-size:clamp(30px,4vw,48px);color:#fff;margin:10px 0 8px}
+.sec-head h2 .it{color:var(--gold)}
+.sec-head p{color:var(--mut);max-width:640px;font-size:16px}
+/* titulares */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--coal);border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative}
+.card img{width:100%;height:230px;object-fit:cover;display:block}
+.card .num{position:absolute;top:14px;left:14px;background:var(--red);color:#fff;font-family:'Oswald',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;padding:6px 14px;border-radius:4px}
+.card .cb{padding:22px 24px 26px}
+.card .cb .tag{color:var(--gold);font-size:11.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase}
+.card h3{font-size:23px;margin:8px 0 6px;color:#fff}
+.card p{font-size:14.5px;color:var(--mut)}
+.card .price{font-family:'Oswald',Arial,sans-serif;font-size:26px;color:var(--gold);margin-top:12px}
+/* menu tabs */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{background:transparent;border:1px solid var(--line);color:var(--mut);font-family:'Oswald',Arial,sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;padding:10px 20px;border-radius:30px;cursor:pointer}
+.tabs button.on{background:var(--gold);border-color:var(--gold);color:#140f08;font-weight:700}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 44px}
+.mi{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px dashed #3a2f24}
+.mi .n{font-weight:600;font-size:16px;color:var(--cream)}
+.mi .n small{display:block;font-weight:400;color:var(--mut);font-size:12.5px;margin-top:2px}
+.mi .p{font-family:'Oswald',Arial,sans-serif;color:var(--gold);font-size:18px;white-space:nowrap}
+.mi .pick{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:2px 9px;border-radius:3px;margin-left:8px;vertical-align:middle}
+.menu-note{margin-top:22px;color:var(--mut);font-size:13.5px;font-style:italic}
+/* pantalla */
+.screen{background:var(--coal);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.show{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.show .ev{background:var(--coal2);border:1px solid var(--line);border-radius:12px;padding:34px 32px;position:relative;overflow:hidden}
+.show .ev::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--gold)}
+.show .ev.alt::before{background:var(--red)}
+.ev .d{font-family:'Oswald',Arial,sans-serif;color:var(--gold);font-size:13px;letter-spacing:3px;text-transform:uppercase}
+.ev h3{font-size:30px;color:#fff;margin:10px 0 8px}
+.ev p{color:var(--mut);font-size:15px}
+.ev .big{font-family:'Oswald',Arial,sans-serif;font-size:20px;color:var(--cream);margin-top:14px;letter-spacing:1px}
+/* santi strip */
+.santi{background:linear-gradient(120deg,#1d130a,#241610);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.santi .wrap{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:center}
+.santi .years{font-family:'Oswald',Arial,sans-serif;font-size:84px;color:var(--gold);line-height:1}
+.santi .years small{display:block;font-size:15px;color:var(--mut);letter-spacing:2px;margin-top:8px;font-family:'Segoe UI',Arial,sans-serif}
+.santi h2{font-size:clamp(26px,3.4vw,40px);color:#fff;margin-bottom:10px}
+.santi p{color:var(--mut);font-size:16px}
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--coal);border:1px solid var(--line);border-radius:12px;padding:28px 26px}
+.rev .stars{color:var(--gold);letter-spacing:3px;font-size:17px;margin-bottom:12px}
+.rev p{font-style:italic;font-size:15px;color:var(--cream)}
+.rev .who{margin-top:16px;font-size:13.5px;color:var(--mut)}
+.rev .who b{color:var(--gold)}
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.vcard{background:var(--coal);border:1px solid var(--line);border-radius:12px;padding:34px 32px}
+.vcard h3{font-size:22px;color:var(--gold);margin-bottom:16px;letter-spacing:2px}
+.vcard table{width:100%;border-collapse:collapse;font-size:15px}
+.vcard td{padding:9px 0;border-bottom:1px dashed #3a2f24;color:var(--cream)}
+.vcard td:last-child{text-align:right;color:var(--mut)}
+.vcard td.today{color:var(--gold);font-weight:700}
+.vcard p.addr{font-size:16px;margin-bottom:6px}
+.vcard a.dir{display:inline-block;margin-top:18px;color:var(--gold);font-weight:700;text-decoration:none;border:1px solid var(--gold);padding:11px 24px;border-radius:6px;font-size:14px;letter-spacing:1px;text-transform:uppercase;font-family:'Oswald',Arial,sans-serif}
+.big-tel{display:block;font-family:'Oswald',Arial,sans-serif;font-size:38px;color:#fff;text-decoration:none;margin:6px 0 4px;letter-spacing:1px}
+.big-tel:hover{color:var(--gold)}
+/* footer */
+footer{background:#000;border-top:2px solid var(--gold);padding:44px 0 0}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;padding-bottom:36px}
+footer h4{font-family:'Oswald',Arial,sans-serif;letter-spacing:2px;font-size:14px;color:var(--gold);margin-bottom:12px}
+footer p,footer li{font-size:14px;color:var(--mut);list-style:none;margin-bottom:6px}
+footer a{color:var(--mut);text-decoration:none}
+footer a:hover{color:var(--gold)}
+.copy{border-top:1px solid var(--line);text-align:center;padding:16px;font-size:12.5px;color:#6f6252}
+/* floating call */
+.call{position:fixed;right:18px;bottom:18px;background:var(--red);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.5);z-index:60}
+.call svg{width:28px;height:28px;fill:#fff}
+@media(max-width:900px){
+.links{display:none}
+.cards,.revs{grid-template-columns:1fr}
+.show,.visit-grid,.santi .wrap{grid-template-columns:1fr}
+.menu-grid{grid-template-columns:1fr}
+footer .wrap{grid-template-columns:1fr}
+section.block{padding:52px 0}
+.big-tel{font-size:30px}
+}
+@media print{
+.hero{display:block;min-height:0}
+.hero img.bg{position:static;height:440px}
+.hero .veil{display:none}
+.hero .wrap{padding-top:34px}
+.ticker .run{animation:none;white-space:normal}
+.lang button{padding:3px 10px}
+.call{display:none}
+nav{position:static}
+.topbar .lang{display:none}
+.links{display:none}
+section.block{padding:44px 0}
+}
+</style>
+</head>
+<body>
+<!-- scoreboard topbar -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="live"><span class="dot"></span><span data-es="ABIERTO HOY · MAR–JUE 11AM–11PM" data-en="OPEN TODAY · TUE–THU 11AM–11PM">ABIERTO HOY · MAR–JUE 11AM–11PM</span></span>
+    <span><a class="tel" href="tel:+18139313888">(813) 931-3888</a></span>
+    <span class="lang"><button id="btn-es" class="on" onclick="setLang('es')">ES</button><button id="btn-en" onclick="setLang('en')">EN</button></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><b>LA VITA <em>NUOVA</em></b><small>SPORT BAR &amp; GRILL</small></a>
+    <div class="links">
+      <a href="#titulares" data-es="Los titulares" data-en="Starters">Los titulares</a>
+      <a href="#menu" data-es="El menú" data-en="Menu">El menú</a>
+      <a href="#pantalla" data-es="En pantalla" data-en="On screen">En pantalla</a>
+      <a href="#visitanos" data-es="Visítanos" data-en="Visit us">Visítanos</a>
+    </div>
+    <a class="cta" href="tel:+18139313888" data-es="Reservar mesa" data-en="Book a table">Reservar mesa</a>
+  </div>
+</nav>
+
+<!-- hero -->
+<header class="hero">
+  <img class="bg" src="imgs/hero-bar.jpg" alt="La Vita Nuova — sport bar en Tampa">
+  <div class="veil"></div>
+  <div class="wrap">
+    <span class="kicker" data-es="North Tampa · Sport Bar &amp; Grill" data-en="North Tampa · Sport Bar &amp; Grill">North Tampa · Sport Bar &amp; Grill</span>
+    <h1 data-es='DONDE EL PARTIDO <span class="gold">SABE MEJOR</span>' data-en='WHERE THE GAME <span class="gold">TASTES BETTER</span>'>DONDE EL PARTIDO <span class="gold">SABE MEJOR</span></h1>
+    <p class="lead" data-es='Comida latina hecha a mano por el chef Santi. <span class="it">Todos los partidos</span> en pantalla, karaoke jueves y domingos.' data-en='Handcrafted Latin food by chef Santi. <span class="it">Every game</span> on screen, karaoke Thursdays and Sundays.'>Comida latina hecha a mano por el chef Santi. <span class="it">Todos los partidos</span> en pantalla, karaoke jueves y domingos.</p>
+    <div class="hero-btns">
+      <a class="btn gold" href="#menu" data-es="Ver el menú" data-en="See the menu">Ver el menú</a>
+      <a class="btn ghost" href="tel:+18139313888" data-es="Llamar ahora" data-en="Call now">Llamar ahora</a>
+    </div>
+    <div class="hero-meta">
+      <span><b>★ 5.0</b> <span data-es="en reseñas de clientes" data-en="in customer reviews">en reseñas de clientes</span></span>
+      <span data-es="Karaoke · Jue &amp; Dom 7PM" data-en="Karaoke · Thu &amp; Sun 7PM">Karaoke · Jue &amp; Dom 7PM</span>
+      <span data-es="Vie &amp; Sáb hasta la medianoche" data-en="Fri &amp; Sat until midnight">Vie &amp; Sáb hasta la medianoche</span>
+    </div>
+  </div>
+</header>
+
+<!-- ticker -->
+<div class="ticker"><span class="run" id="ticker"></span></div>
+
+<!-- titulares -->
+<section class="block" id="titulares">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kick" data-es="Recomendado por Santi" data-en="Santi's picks">Recomendado por Santi</span>
+      <h2 data-es='Los <span class="it">titulares</span> de la casa' data-en='The house <span class="it">headliners</span>'>Los <span class="it">titulares</span> de la casa</h2>
+      <p data-es="Los platos que la gente pide, repite y recomienda. Si es tu primera vez, empieza por aquí." data-en="The dishes people order, repeat and recommend. If it's your first time, start here.">Los platos que la gente pide, repite y recomienda. Si es tu primera vez, empieza por aquí.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num">01</span>
+        <img src="imgs/tequila-fettuccine.jpg" alt="Tequila Fettuccine">
+        <div class="cb">
+          <span class="tag" data-es="El favorito" data-en="The favorite">El favorito</span>
+          <h3>Tequila Fettuccine</h3>
+          <p data-es="Fettuccine de espinaca con camarones o pollo, terminada con un toque real de tequila. Santi le pone su nombre." data-en="Spinach fettuccine with shrimp or chicken, finished with a real tequila pour. Santi puts his name on it.">Fettuccine de espinaca con camarones o pollo, terminada con un toque real de tequila. Santi le pone su nombre.</p>
+          <div class="price">$21.99</div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <img src="imgs/tomahawk.jpg" alt="Tomahawk Steak">
+        <div class="cb">
+          <span class="tag" data-es="Para compartir (o no)" data-en="To share (or not)">Para compartir (o no)</span>
+          <h3>Tomahawk Steak</h3>
+          <p data-es="60 oz de ribeye con hueso, a la parrilla a tu gusto. Cuando llega a la mesa, se hace silencio." data-en="60 oz of bone-in ribeye, grilled to order. When it lands on the table, silence follows.">60 oz de ribeye con hueso, a la parrilla a tu gusto. Cuando llega a la mesa, se hace silencio.</p>
+          <div class="price">$79.99</div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <img src="imgs/cocktails.jpg" alt="Sangría y cócteles">
+        <div class="cb">
+          <span class="tag" data-es="La barra" data-en="The bar">La barra</span>
+          <h3 data-es="Sangría &amp; Cócteles" data-en="Sangria &amp; Cocktails">Sangría &amp; Cócteles</h3>
+          <p data-es="Sangría de la casa por copa o jarra, mimosas y cervezas bien frías para acompañar el partido." data-en="House sangria by the glass or pitcher, mimosas and ice-cold beer to go with the game.">Sangría de la casa por copa o jarra, mimosas y cervezas bien frías para acompañar el partido.</p>
+          <div class="price" data-es="Desde $6.00" data-en="From $6.00">Desde $6.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- menu -->
+<section class="block" id="menu" style="background:var(--coal);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kick">Full menu</span>
+      <h2 data-es='El <span class="it">menú</span>' data-en='The <span class="it">menu</span>'>El <span class="it">menú</span></h2>
+      <p data-es="Fusión latina, cortes premium, mariscos frescos y pastas exclusivas. Precios del menú actual del restaurante." data-en="Latin fusion, premium steaks, fresh seafood and exclusive pastas. Prices from the restaurant's current menu.">Fusión latina, cortes premium, mariscos frescos y pastas exclusivas. Precios del menú actual del restaurante.</p>
+    </div>
+    <div class="tabs" id="menu-tabs"></div>
+    <div class="menu-grid" id="menu-grid"></div>
+    <p class="menu-note" data-es="* Menú para niños disponible · Combo familiar desde $14.99. Pregunta por la carta de vinos y los especiales del día." data-en="* Kids menu available · Family combo from $14.99. Ask about the wine list and daily specials.">* Menú para niños disponible · Combo familiar desde $14.99. Pregunta por la carta de vinos y los especiales del día.</p>
+  </div>
+</section>
+<!-- en pantalla -->
+<section class="block screen" id="pantalla">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kick" data-es="Transmisión en vivo" data-en="Live broadcast">Transmisión en vivo</span>
+      <h2 data-es='En <span class="it">pantalla</span>' data-en='On <span class="it">screen</span>'>En <span class="it">pantalla</span></h2>
+      <p data-es="Aquí no se elige un solo partido: si se está jugando, está en pantalla." data-en="We don't pick just one game here: if it's playing, it's on.">Aquí no se elige un solo partido: si se está jugando, está en pantalla.</p>
+    </div>
+    <div class="show">
+      <div class="ev">
+        <span class="d" data-es="Todos los días" data-en="Every day">Todos los días</span>
+        <h3 data-es="Todos los partidos" data-en="Every game">Todos los partidos</h3>
+        <p data-es="NFL, NBA, MLB — no tenemos favoritos. Ven con tu camiseta y pide tu mesa antes del partido grande." data-en="NFL, NBA, MLB — we don't pick favorites. Come in your jersey and book your table before the big game.">NFL, NBA, MLB — no tenemos favoritos. Ven con tu camiseta y pide tu mesa antes del partido grande.</p>
+        <div class="big">NFL · NBA · MLB</div>
+      </div>
+      <div class="ev alt">
+        <span class="d" data-es="Jueves y domingos · 7:00 PM" data-en="Thursdays &amp; Sundays · 7:00 PM">Jueves y domingos · 7:00 PM</span>
+        <h3>Karaoke <span class="it" style="color:var(--gold)">con DJ Lual</span></h3>
+        <p data-es="La semana no termina el fin de semana. Karaoke en vivo para acompañar tu cena, tus tragos y la mejor compañía de North Tampa." data-en="The week doesn't end on the weekend. Live karaoke to go with your dinner, your drinks and the best company in North Tampa.">La semana no termina el fin de semana. Karaoke en vivo para acompañar tu cena, tus tragos y la mejor compañía de North Tampa.</p>
+        <div class="big" data-es="JUE &amp; DOM · 7PM" data-en="THU &amp; SUN · 7PM">JUE &amp; DOM · 7PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- santi -->
+<section class="block santi">
+  <div class="wrap">
+    <div class="years">30+<small data-es="AÑOS COCINANDO EN TAMPA" data-en="YEARS COOKING IN TAMPA">AÑOS COCINANDO EN TAMPA</small></div>
+    <div>
+      <h2 data-es='La cocina de <span class="it" style="color:var(--gold)">Santi</span>' data-en='Santi&apos;s <span class="it" style="color:var(--gold)">kitchen</span>'>La cocina de <span class="it" style="color:var(--gold)">Santi</span></h2>
+      <p data-es="Santi no abrió La Vita Nuova para ir a lo seguro. Después de más de tres décadas cocinando en Tampa, armó un menú con lo que de verdad sabe hacer: pastas terminadas con tequila o vodka, cortes premium y mariscos frescos. No es un menú de catálogo — son sus recetas." data-en="Santi didn't open La Vita Nuova to play it safe. After more than three decades cooking in Tampa, he built a menu around what he actually knows how to do: pastas finished with tequila or vodka, premium steaks and fresh seafood. Not a catalog menu — his recipes.">Santi no abrió La Vita Nuova para ir a lo seguro. Después de más de tres décadas cocinando en Tampa, armó un menú con lo que de verdad sabe hacer: pastas terminadas con tequila o vodka, cortes premium y mariscos frescos. No es un menú de catálogo — son sus recetas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="block" id="opciones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kick" data-es="La afición" data-en="The fans">La afición</span>
+      <h2 data-es='Lo que dice <span class="it">Tampa</span>' data-en='What <span class="it">Tampa</span> says'>Lo que dice <span class="it">Tampa</span></h2>
+    </div>
+    <div class="revs">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p data-es="«El Tequila Fettuccine es otra cosa. El ambiente es genial, el personal atento, y tenían el partido puesto. Ya estoy planeando volver.»" data-en="“The Tequila Fettuccine is something else. The vibe is great, the staff is attentive, and they had the game on. Already planning to go back.”">«El Tequila Fettuccine es otra cosa. El ambiente es genial, el personal atento, y tenían el partido puesto. Ya estoy planeando volver.»</p>
+        <div class="who"><b>Carlos M.</b> · <span data-es="cliente" data-en="customer">cliente</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p data-es="«Vinimos 6 a cenar. Todos pidieron algo distinto y todos quedaron felices — eso casi nunca pasa. El Tomahawk, irreal. Este es nuestro lugar.»" data-en="“Came in for dinner with a group of 6. Everyone ordered something different and everyone was happy — that almost never happens. The Tomahawk was unreal. This is our new spot.”">«Vinimos 6 a cenar. Todos pidieron algo distinto y todos quedaron felices — eso casi nunca pasa. El Tomahawk, irreal. Este es nuestro lugar.»</p>
+        <div class="who"><b>Diana R.</b> · <span data-es="cliente" data-en="customer">cliente</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p data-es="«Por fin un verdadero bar &amp; grill latino en North Tampa. La comida es de verdad y el servicio nos hizo sentir como clientes de siempre desde la primera visita.»" data-en="“Finally a real Latin bar and grill in North Tampa. The food is legit, and the service made us feel like regulars on the first visit.”">«Por fin un verdadero bar &amp; grill latino en North Tampa. La comida es de verdad y el servicio nos hizo sentir como clientes de siempre desde la primera visita.»</p>
+        <div class="who"><b>Mike T.</b> · <span data-es="cliente" data-en="customer">cliente</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- visitanos -->
+<section class="block" id="visitanos" style="background:var(--coal);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kick" data-es="La cancha" data-en="The venue">La cancha</span>
+      <h2 data-es='Ven <span class="it">como eres</span>' data-en='Come <span class="it">as you are</span>'>Ven <span class="it">como eres</span></h2>
+      <p data-es="Sin reservación obligatoria: entra, busca tu mesa y pide lo que Santi recomienda. Para grupos o noches de partido grande, reserva antes." data-en="No reservation required: walk in, find your table and order what Santi recommends. For groups or big game nights, book ahead.">Sin reservación obligatoria: entra, busca tu mesa y pide lo que Santi recomienda. Para grupos o noches de partido grande, reserva antes.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="vcard">
+        <h3 data-es="HORARIO" data-en="HOURS">HORARIO</h3>
+        <table>
+          <tr><td data-es="Mar – Jue" data-en="Tue – Thu">Mar – Jue</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td data-es="Vie – Sáb" data-en="Fri – Sat">Vie – Sáb</td><td>11:00 AM – 12:00 AM</td></tr>
+          <tr><td data-es="Domingo" data-en="Sunday">Domingo</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td data-es="Lunes" data-en="Monday">Lunes</td><td data-es="Cerrado" data-en="Closed">Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="vcard">
+        <h3 data-es="ENCUÉNTRANOS" data-en="FIND US">ENCUÉNTRANOS</h3>
+        <p class="addr">8502 N Armenia Ave, Suite 1H<br>Tampa, FL 33604</p>
+        <a class="big-tel" href="tel:+18139313888">(813) 931-3888</a>
+        <p style="color:var(--mut);font-size:14px" data-es="Llámanos para reservar tu mesa." data-en="Call us to book your table.">Llámanos para reservar tu mesa.</p>
+        <a class="dir" href="https://www.google.com/maps/search/?api=1&query=La+Vita+Nuova+8502+N+Armenia+Ave+Tampa+FL" target="_blank" rel="noopener" data-es="Cómo llegar" data-en="Get directions">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#" style="margin-bottom:12px;display:inline-block"><b>LA VITA <em>NUOVA</em></b><small>SPORT BAR &amp; GRILL</small></a>
+      <p data-es="Comida latina hecha a mano y todos los partidos en pantalla, en el corazón de North Tampa." data-en="Handcrafted Latin food and every game on screen, in the heart of North Tampa.">Comida latina hecha a mano y todos los partidos en pantalla, en el corazón de North Tampa.</p>
+    </div>
+    <div>
+      <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+      <p>8502 N Armenia Ave, Suite 1H<br>Tampa, FL 33604</p>
+      <p><a href="tel:+18139313888">(813) 931-3888</a></p>
+    </div>
+    <div>
+      <h4 data-es="Horario" data-en="Hours">Horario</h4>
+      <ul>
+        <li data-es="Mar–Jue · 11am–11pm" data-en="Tue–Thu · 11am–11pm">Mar–Jue · 11am–11pm</li>
+        <li data-es="Vie–Sáb · 11am–12am" data-en="Fri–Sat · 11am–12am">Vie–Sáb · 11am–12am</li>
+        <li data-es="Dom · 11am–11pm · Lun cerrado" data-en="Sun · 11am–11pm · Mon closed">Dom · 11am–11pm · Lun cerrado</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">© 2026 La Vita Nuova Sport Bar &amp; Grill · Tampa, FL · <span data-es="Demo conceptual — precios del menú actual del restaurante" data-en="Concept demo — prices from the restaurant's current menu">Demo conceptual — precios del menú actual del restaurante</span></div>
+</footer>
+
+<a class="call" href="tel:+18139313888" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+<script>
+/* ===== i18n ===== */
+function setLang(l){
+  document.querySelectorAll('[data-es]').forEach(function(el){
+    el.innerHTML = (l==='es') ? el.getAttribute('data-es') : el.getAttribute('data-en');
+  });
+  document.documentElement.lang = l;
+  document.getElementById('btn-es').classList.toggle('on', l==='es');
+  document.getElementById('btn-en').classList.toggle('on', l==='en');
+  renderMenu(curCat);
+  document.getElementById('ticker').textContent = tickerText(l);
+  try{localStorage.setItem('lvn-lang', l);}catch(e){}
+}
+/* ===== ticker ===== */
+function tickerText(l){
+  var items = l==='es'
+    ? ['TEQUILA FETTUCCINE $21.99','TOMAHAWK 60 OZ $79.99','KARAOKE · JUEVES Y DOMINGOS 7PM','TODOS LOS PARTIDOS EN PANTALLA','SANGRÍA DE LA CASA','VIERNES Y SÁBADO HASTA LA MEDIANOCHE']
+    : ['TEQUILA FETTUCCINE $21.99','TOMAHAWK 60 OZ $79.99','KARAOKE · THURSDAYS & SUNDAYS 7PM','EVERY GAME ON SCREEN','HOUSE SANGRIA','FRIDAY & SATURDAY UNTIL MIDNIGHT'];
+  return (' ◆ ' + items.join('   ◆   ') + '   ').repeat(3);
+}
+/* ===== menu ===== */
+var MENU = [
+ {id:'start', es:'Para empezar', en:'Starters', items:[
+   {es:'Lobster Cheese Cream', en:'Lobster Cheese Cream', d_es:'El favorito de Santi para empezar.', d_en:"Santi's favorite way to start.", p:'$10.99', pick:1},
+   {es:'Ham Cream', en:'Ham Cream', d_es:'', d_en:'', p:'$8.99'},
+   {es:'Croquetas de bacalao', en:'Cod croquettes', d_es:'', d_en:'', p:'$7.99'},
+   {es:'Cóctel de camarones', en:'Shrimp cocktail', d_es:'', d_en:'', p:'$19.99'},
+   {es:'Tostones rellenos', en:'Stuffed plantains', d_es:'De camarón o cerdo.', d_en:'Shrimp or pork.', p:'$15.99'}
+ ]},
+ {id:'sea', es:'Mariscos', en:'Seafood', items:[
+   {es:'Langosta a la criolla', en:'Creole lobster', d_es:'', d_en:'', p:'$55.00', pick:1},
+   {es:'Langosta al ajillo', en:'Garlic lobster', d_es:'', d_en:'', p:'$55.99', pick:1},
+   {es:'Camarones a la criolla', en:'Creole shrimp', d_es:'', d_en:'', p:'$22.99', pick:1},
+   {es:'Camarones al ajillo', en:'Garlic shrimp', d_es:'', d_en:'', p:'$21.99', pick:1}
+ ]},
+ {id:'pasta', es:'Pastas', en:'Pasta', items:[
+   {es:'Fettuccine al tequila', en:'Tequila fettuccine', d_es:'Con camarones o pollo.', d_en:'With shrimp or chicken.', p:'$21.99', pick:1},
+   {es:'Fettuccine chino', en:'Chinese fettuccine', d_es:'', d_en:'', p:'$21.99'},
+   {es:'Penne a la vodka', en:'Penne alla vodka', d_es:'', d_en:'', p:'$20.99', pick:1},
+   {es:'Fettuccine Alfredo', en:'Fettuccine Alfredo', d_es:'', d_en:'', p:'$18.99', pick:1},
+   {es:'Spaghetti carbonara', en:'Spaghetti carbonara', d_es:'', d_en:'', p:'$14.00'}
+ ]},
+ {id:'meat', es:'Carnes', en:'Steaks', items:[
+   {es:'Tomahawk Steak', en:'Tomahawk steak', d_es:'60 oz de ribeye con hueso.', d_en:'60 oz bone-in ribeye.', p:'$79.99', pick:1},
+   {es:'Filet Mignon', en:'Filet mignon', d_es:'', d_en:'', p:'$42.00', pick:1},
+   {es:'Ribeye', en:'Ribeye steak', d_es:'', d_en:'', p:'$42.00', pick:1},
+   {es:'Churrasco', en:'Skirt steak', d_es:'', d_en:'', p:'$27.99'},
+   {es:'Cerdo frito', en:'Fried pork', d_es:'', d_en:'', p:'$15.99'}
+ ]},
+ {id:'bar', es:'La barra', en:'The bar', items:[
+   {es:'Sangría · copa', en:'Sangria · glass', d_es:'De la casa.', d_en:'House made.', p:'$14.99'},
+   {es:'Sangría · jarra', en:'Sangria · pitcher', d_es:'Para la mesa.', d_en:'For the table.', p:'$32.00'},
+   {es:'Mimosa', en:'Mimosa', d_es:'', d_en:'', p:'$12.99'},
+   {es:'Cervezas', en:'Beers', d_es:'Corona, Modelo, Heineken, Stella Artois.', d_en:'Corona, Modelo, Heineken, Stella Artois.', p:'$6.00'},
+   {es:'Café espresso', en:'Espresso', d_es:'', d_en:'', p:'$3.99'}
+ ]}
+];
+var curCat = 'start';
+function renderTabs(){
+  var l = document.documentElement.lang || 'es';
+  document.getElementById('menu-tabs').innerHTML = MENU.map(function(c){
+    return '<button class="'+(c.id===curCat?'on':'')+'" onclick="curCat=\''+c.id+'\';renderTabs();renderMenu(\''+c.id+'\')">'+(l==='es'?c.es:c.en)+'</button>';
+  }).join('');
+}
+function renderMenu(id){
+  var l = document.documentElement.lang || 'es';
+  var c = MENU.find(function(x){return x.id===id;});
+  document.getElementById('menu-grid').innerHTML = c.items.map(function(it){
+    var name = l==='es'?it.es:it.en;
+    var d = l==='es'?it.d_es:it.d_en;
+    var pick = it.pick ? '<span class="pick">'+(l==='es'?"DE LA CASA":"HOUSE PICK")+'</span>' : '';
+    return '<div class="mi"><div class="n">'+name+pick+(d?'<small>'+d+'</small>':'')+'</div><div class="p">'+it.p+'</div></div>';
+  }).join('');
+}
+/* init */
+(function(){
+  var l = 'es';
+  try{ l = localStorage.getItem('lvn-lang') || 'es'; }catch(e){}
+  renderTabs(); renderMenu(curCat);
+  document.getElementById('ticker').textContent = tickerText(l);
+  if(l==='en') setLang('en');
+})();
+</script>
+</body>
+</html>
